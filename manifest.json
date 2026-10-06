@@ -9,7 +9,7 @@
       "summary": "Production Pilot update test.",
       "encryption_version": "aes-256-gcm-v1",
       "ciphertext_sha256": "88c53b31db0a13811ea89c61e34a417d0e0ff1b92688daa265481570df9af4ca",
-      "asset_url": "https://raw.githubusercontent.com/0x-howard/howto-swt-dist/main/releases/1.0.1/howto-swt-pro-1.0.1.bundle",
+      "asset_url": "https://raw.githubusercontent.com/0x-howard/howto-swt-pro-dist/main/releases/1.0.1/howto-swt-pro-1.0.1.bundle",
       "size": 761871
     }
   }
