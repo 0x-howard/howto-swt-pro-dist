@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "product": "howto-swt-pro",
-  "latest": "1.0.1",
+  "latest": "1.1.0",
   "releases": {
     "1.0.1": {
       "version": "1.0.1",
@@ -11,6 +11,15 @@
       "ciphertext_sha256": "88c53b31db0a13811ea89c61e34a417d0e0ff1b92688daa265481570df9af4ca",
       "asset_url": "https://raw.githubusercontent.com/0x-howard/howto-swt-pro-dist/main/releases/1.0.1/howto-swt-pro-1.0.1.bundle",
       "size": 761871
+    },
+    "1.1.0": {
+      "version": "1.1.0",
+      "released_at": "2026-10-07T18:55:59Z",
+      "summary": "Managed Lifecycle Context、Runtime Lifecycle 与 Offline Activation key rotation reliability。",
+      "encryption_version": "aes-256-gcm-v1",
+      "ciphertext_sha256": "f2399544c9218b45d530ce5b1f4f7bc9e32dbb9c6f9267bb438b05555e418197",
+      "asset_url": "https://raw.githubusercontent.com/0x-howard/howto-swt-pro-dist/main/releases/1.1.0/howto-swt-pro-1.1.0.bundle",
+      "size": 831652
     }
   }
 }

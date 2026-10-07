@@ -1,77 +1,79 @@
 # HowTo SWT Pro
 
-HowTo SWT Pro 的官方授权安装与加密发布仓库。
+## 01 Hero
 
-**HowTo SWT Pro v1.0.1** · Created by Howard
+HowTo SWT Pro 是管理完整 SWT 生命周期的会员版：在 Free 的完整单任务能力上增加 persistent profile、过程状态、历史记录、Context Builder 与受控 Write Back。
 
-## 🚀 安装 HowTo SWT
+**HowTo SWT Pro v1.1.0** · Created by Howard
 
-先确认你正在使用的 Agent，再打开统一安装入口：[《HowTo SWT 安装说明》](docs/INSTALL.md)。
+本仓库只承载 public manifest、encrypted bundle、公开说明和必要 metadata；不包含 Pro 明文源码、会员数据、Secret 或私钥。
 
-| Agent | Free | Pro | 安装方式 |
-|---|---|---|---|
-| Codex | ◐ 包结构与调用规则已验证 | ✅ Online 安装、更新与 Runtime 已验证 | [安装说明](docs/INSTALL.md) |
-| 豆包 Work | 🧪 待完整验证 | ◐ Offline Activation 安装链路已验证；Runtime 待完整验证 | [安装说明](docs/INSTALL.md) |
-| Claude Code | ◐ 兼容 Skills CLI；待真实 Runtime 验收 | 🧪 已有适配器，待完整验证 | [安装说明](docs/INSTALL.md) |
-| WorkBuddy | 🧪 待完整验证 | 🧪 已有适配器，待完整验证 | [安装说明](docs/INSTALL.md) |
+## 02 Agent 安装
 
-状态只代表现有测试记录，不代表所有宿主版本都已完整验收。
+Pro 通过公开 [HowTo SWT CLI](https://github.com/0x-howard/howto-swt-cli) 授权安装与更新。Online 服务目前仍是显式 Pilot / staging，不冒充 Production；受限网络 Agent 使用 device-bound Offline Activation。
 
-## Free 与 Pro
+| Agent | 当前验证状态 |
+|---|---|
+| Codex | ✅ package Runtime、Online mock E2E、品牌触发与岗位路由已验收 |
+| WorkBuddy | ◐ flat-six Pro 安装、Edition switch 与 rollback 已集成测试；本机无宿主，未做 UI Runtime 验收 |
+| 豆包 Work | ◐ Offline Activation 与既有 adapter 回归通过；本轮未做真实宿主验收 |
+| Claude Code | ◐ package adapter 回归通过；待真实宿主验收 |
 
-| 能力 | HowTo SWT Free | HowTo SWT Pro |
-|---|---|---|
-| SWT 全流程导航 | ✅ | ✅ |
-| 报名与申请 | ✅ | ✅ 基于同一 Free 能力基座 |
-| 岗位 / Offer 分析 | ✅ | ✅ 基于同一 Free 能力基座 |
-| 收入与回本测算 | ✅ | ✅ |
-| SWT English | ✅ 基础测评、训练与面试 | ✅ 当前与 Free 共用能力基座 |
-| Visa / Arrival | ✅ | ✅ |
-| 最新 SWT 知识与规则更新 | 基础维护 | ✅ 会员更新机制 |
-| Pro 专属工作流 | — | ✅ 授权安装、更新与 Offline Activation |
-| 受限网络 Agent 适配 | — | ✅ Offline Activation 安装链路 |
-| 持续版本更新 | 基础维护 | ✅ 会员有效期内获取新版本 |
-| 真人陪跑支持 | — | ✅ 陪跑营会员 |
-| 获取方式 | 免费使用 | 加入 SWT 陪跑营，登记会员邮箱后开通 |
+[查看安装与授权边界 →](docs/INSTALL.md)
 
-## Pro 核心能力
+## 03 Free vs Pro
 
-- 使用 HowTo SWT Free v1.1.1 的六项任务能力作为当前基座。
-- 通过会员邮箱与 OTP 完成身份确认。
-- 支持 Online install / update，并为受限网络环境提供 Offline Activation。
-- 新版本继续使用独立授权；会员到期后，已安装版本不会被远程删除。
+| 产品 | 正式边界 |
+|---|---|
+| Free | 在当前会话内完成一个完整 SWT 任务 |
+| Pro | 跨会话管理一个完整 SWT 过程 |
+| SWT 陪跑营 | Pro + 社群 + 直播 + 真人判断／复核／陪跑 |
 
-## 使用方式
+OTP、Offline Activation 与 encrypted bundle 是 entitlement infrastructure，不是 Pro 的主要用户价值。
 
-安装完成后直接用自然语言开始，例如：
+## 04 核心能力
+
+- 继承 Free v1.2.0 的 Router、Handoff、五个 Domain Executor 与 State Machine。
+- Canonical Profile、SWT Case、Lifecycle、Offer、English、Visa、housing、documents metadata 与 Event History。
+- Context Builder 按当前 Executor / intent 只加载相关信息。
+- Confirmed / Evidence / Inference 分级 Write Back；Inference 必须先确认。
+- VIEW、UPDATE、DELETE、EXPORT，以及新会话恢复。
+- Runtime Identity、Edition Guard、24h update check、atomic switch、verify 与 rollback。
+
+## 05 使用方式
 
 ```text
 你好小How
-帮我看看我现在到哪一步了
-小How帮我分析这个 Offer
+小How帮我看看这个岗位
 陪我练 Sponsor 面试
-帮我核对签证材料
+小How，你现在记得我什么？
+把我的 Sponsor 改成 CIEE。
+删除之前那个 Offer。
+导出我的 SWT 档案。
 ```
 
-## 授权与隐私
+更新检查不会抢占任务。会员更新资格到期后，已安装 Pro 仍可继续使用；若有新版，只说明更新资格已到期，不提供可执行更新提示。
 
-- 会员邮箱只用于权限验证，OTP 用于身份确认。
-- Pro package 与会员数据分离。
-- 会员到期后，已安装版本不会被远程删除，但会失去新版本更新资格。
-- 本仓库只保存 public manifest、加密 bundle、公开说明和必要 metadata，不包含 Pro 源码、会员数据或私有密钥。
+## 06 数据与隐私
 
-## 最近更新
+- Persistent Context 只允许位于 package 外、由宿主显式指定的 `USER_DATA_ROOT`。
+- Pro package、Git、overlay、references 与本 Dist 仓库不保存用户长期数据。
+- Evidence Fact 保存 source/document reference 与 confidence；Inference 未经确认不得持久化。
+- 会员邮箱只用于 entitlement；OTP、session token、activation token、release key 和私钥不进入本仓库。
+
+## 07 最近 5 个版本
 
 <!-- CHANGELOG_LATEST_START -->
 | 版本 | 更新 |
 |---|---|
+| v1.1.0 | 增加 Managed Lifecycle Context，并接入统一 Task/Runtime 架构与受控更新生命周期。 |
 | v1.0.1 | 验证加密发布、Offline Activation 与安全更新链路；无新增业务能力。 |
 | v1.0.0 | 建立基于 Free 的 Pro overlay 与授权分发基础。 |
 <!-- CHANGELOG_LATEST_END -->
 
 [查看完整更新日志 →](docs/CHANGELOG.md)
 
-## Author
+## 08 Author
 
 HowTo SWT  
 作者：Howard  
