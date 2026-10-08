@@ -4,7 +4,7 @@
 
 HowTo SWT Pro 是管理完整 SWT 生命周期的会员版：在 Free 的完整单任务能力上增加 persistent profile、过程状态、历史记录、Context Builder 与受控 Write Back。
 
-**HowTo SWT Pro v1.1.0** · Created by Howard
+**HowTo SWT Pro v1.2.0** · Created by Howard
 
 本仓库只承载 public manifest、encrypted bundle、公开说明和必要 metadata；不包含 Pro 明文源码、会员数据、Secret 或私钥。
 
@@ -14,10 +14,10 @@ Pro 通过公开 [HowTo SWT CLI](https://github.com/0x-howard/howto-swt-cli) 授
 
 | Agent | 当前验证状态 |
 |---|---|
-| Codex | ✅ package Runtime、Online mock E2E、品牌触发与岗位路由已验收 |
-| WorkBuddy | ◐ flat-six Pro 安装、Edition switch 与 rollback 已集成测试；本机无宿主，未做 UI Runtime 验收 |
-| 豆包 Work | ◐ Offline Activation 与既有 adapter 回归通过；本轮未做真实宿主验收 |
-| Claude Code | ◐ package adapter 回归通过；待真实宿主验收 |
+| Codex | ✅ package Runtime、完整业务回归与当前会话 capability inventory 已验收；无 picker 时使用文本 fallback |
+| WorkBuddy | ◐ flat-six 安装与 lifecycle 已集成测试，并核对本机 Runtime 的 structured-choice 静态证据；未做真实 UI E2E |
+| 豆包 Work | ◐ Offline Activation、interaction contract 与文本 fallback 回归通过；未验证正式 choice/form UI |
+| Claude Code | ◐ package adapter、interaction contract 与文本 fallback 回归通过；未做真实宿主 UI 验收 |
 
 [查看安装与授权边界 →](docs/INSTALL.md)
 
@@ -33,7 +33,7 @@ OTP、Offline Activation 与 encrypted bundle 是 entitlement infrastructure，�
 
 ## 04 核心能力
 
-- 继承 Free v1.2.0 的 Router、Handoff、五个 Domain Executor 与 State Machine。
+- 继承 Free v1.3.0 的 Router、Handoff、五个 Domain Executor、Offer Return Function 与 Interaction Capability Layer。
 - Canonical Profile、SWT Case、Lifecycle、Offer、English、Visa、housing、documents metadata 与 Event History。
 - Context Builder 按当前 Executor / intent 只加载相关信息。
 - Confirmed / Evidence / Inference 分级 Write Back；Inference 必须先确认。
@@ -66,6 +66,7 @@ OTP、Offline Activation 与 encrypted bundle 是 entitlement infrastructure，�
 <!-- CHANGELOG_LATEST_START -->
 | 版本 | 更新 |
 |---|---|
+| v1.2.0 | 新增岗位收益函数、工时区间最优分析与 context-aware 跨 Agent 交互。 |
 | v1.1.0 | 增加 Managed Lifecycle Context，并接入统一 Task/Runtime 架构与受控更新生命周期。 |
 | v1.0.1 | 验证加密发布、Offline Activation 与安全更新链路；无新增业务能力。 |
 | v1.0.0 | 建立基于 Free 的 Pro overlay 与授权分发基础。 |

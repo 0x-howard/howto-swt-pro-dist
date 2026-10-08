@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "product": "howto-swt-pro",
-  "latest": "1.1.0",
+  "latest": "1.2.0",
   "releases": {
     "1.0.1": {
       "version": "1.0.1",
@@ -20,6 +20,15 @@
       "ciphertext_sha256": "f2399544c9218b45d530ce5b1f4f7bc9e32dbb9c6f9267bb438b05555e418197",
       "asset_url": "https://raw.githubusercontent.com/0x-howard/howto-swt-pro-dist/main/releases/1.1.0/howto-swt-pro-1.1.0.bundle",
       "size": 831652
+    },
+    "1.2.0": {
+      "version": "1.2.0",
+      "released_at": "2026-10-09T04:30:00Z",
+      "summary": "Offer Return Function、跨 Agent Interaction Layer 与 context-aware continuation。",
+      "encryption_version": "aes-256-gcm-v1",
+      "ciphertext_sha256": "664212fe9ce27d407b47581bf5189dcfbc2297d6a97efa4d1ec3d5c6bf0a64d4",
+      "asset_url": "https://raw.githubusercontent.com/0x-howard/howto-swt-pro-dist/main/releases/1.2.0/howto-swt-pro-1.2.0.bundle",
+      "size": 934544
     }
   }
 }

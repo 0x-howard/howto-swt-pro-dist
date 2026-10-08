@@ -1,5 +1,13 @@
 # HowTo SWT Pro Release Notes
 
+## v1.2.0 — Offer Return & Context-aware Interaction
+
+- 基座升级到 HowTo SWT Free v1.3.0，新增确定性的 `y = ax + b` 岗位收益函数、工时区间交点、最优区间与严格支配分析。
+- 超过 3 个 Offer 时先显示全量列表，再选择最多 3 个做函数比较；宿主没有图形能力时完整退化为函数、表格、交点与区间结论。
+- 新增共享 Interaction Capability Layer：已明确就执行，有限选择优先原生 UI，需要事实则输入；能力不可用时使用一致的编号／文本 fallback。
+- Pro Context Builder 复用已确认的 Offer、工时偏好与阶段信息，避免重复询问，并支持 changed facts 后的确定性重算。
+- 公开分发仍只包含加密 Bundle、SHA-256、manifest 与说明；Production Cloud 未在本次发布流程中修改。
+
 ## v1.1.0 — Managed Lifecycle Context
 
 ### Milestone 1 — Orchestration base
